@@ -6,107 +6,116 @@
 <title>Tautas dejām vajag vairāk puišu — 5 iemesli</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700;800&display=swap" rel="stylesheet">
 <style>
   :root{
-    --ink:#141414;
-    --muted:#5f5f5f;
-    --line:#e3e0da;
-    --paper:#faf8f4;
-    --accent:#9d2235;
-    --accent-soft:#f3e6e8;
+    --ink:#111111;
+    --body:#3a3a3a;
+    --muted:#7a756c;
+    --line:#e0dcd3;
+    --paper:#f5f3ee;
+    --accent:#9d2235;       /* MAINI ŠO, JA GRIBI CITU KRĀSU */
   }
   *{box-sizing:border-box;margin:0;padding:0;}
   body{
     background:var(--paper);
-    color:var(--ink);
-    font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+    color:var(--body);
+    font-family:'Archivo',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
     font-size:18px;
-    line-height:1.65;
+    line-height:1.6;
     -webkit-font-smoothing:antialiased;
   }
-  .wrap{max-width:720px;margin:0 auto;padding:0 24px 100px;}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 40px 110px;}
 
-  /* ---------- HEADER ---------- */
-  header{padding:72px 0 40px;border-bottom:3px solid var(--ink);margin-bottom:48px;}
+  /* ---------- VIRSRAKSTS ---------- */
+  header{padding:80px 0 56px;max-width:900px;}
   .kicker{
-    font-size:13px;letter-spacing:.16em;text-transform:uppercase;
-    font-weight:700;color:var(--accent);margin-bottom:20px;
+    font-size:13px;letter-spacing:.18em;text-transform:uppercase;
+    font-weight:700;color:var(--accent);margin-bottom:22px;
   }
   h1{
-    font-family:'Bebas Neue',Impact,sans-serif;
-    font-size:clamp(42px,8vw,76px);
-    line-height:.98;letter-spacing:.01em;font-weight:400;
-    text-transform:uppercase;
+    font-size:clamp(38px,5.4vw,62px);
+    line-height:1.04;letter-spacing:-.02em;font-weight:800;
+    text-transform:uppercase;color:var(--ink);
   }
   h1 .hl{color:var(--accent);}
   .standfirst{
-    margin-top:24px;font-size:20px;color:var(--muted);max-width:56ch;
+    margin-top:26px;font-size:20px;color:var(--muted);max-width:60ch;
   }
+  .rule{height:2px;background:var(--ink);margin-bottom:70px;}
 
-  /* ---------- IMAGE SLOTS ---------- */
-  .shot{
-    margin:0 0 40px;background:#e8e5df;border:1px dashed #c9c4bb;
-    border-radius:4px;overflow:hidden;
+  /* ---------- IEMESLI ---------- */
+  .item{
+    display:grid;
+    grid-template-columns:64px 460px 1fr;
+    gap:0 56px;
+    align-items:start;
+    padding:60px 0;
   }
-  .shot img{display:block;width:100%;height:auto;}
-  .shot .ph{
-    display:flex;align-items:center;justify-content:center;
-    aspect-ratio:16/9;color:#9a948a;font-size:14px;
-    letter-spacing:.08em;text-transform:uppercase;text-align:center;padding:20px;
-  }
-  .hero-shot{margin-bottom:56px;}
+  .item + .item{border-top:1px solid var(--line);}
 
-  /* ---------- LIST ITEMS ---------- */
-  .item{padding:40px 0;border-top:1px solid var(--line);}
-  .item:first-of-type{border-top:none;padding-top:0;}
   .num{
-    font-family:'Bebas Neue',Impact,sans-serif;
-    font-size:64px;line-height:1;color:var(--accent);
-    display:block;margin-bottom:6px;
+    font-size:15px;font-weight:700;color:var(--muted);
+    letter-spacing:.06em;padding-top:6px;
   }
-  h2{
-    font-size:27px;line-height:1.25;font-weight:700;
-    letter-spacing:-.01em;margin-bottom:16px;
+  .shot{
+    border-radius:6px;overflow:hidden;background:#e6e3dc;
+    aspect-ratio:1/1;
   }
-  .item p{color:#2b2b2b;}
-  .item p + p{margin-top:14px;}
+  .shot img{display:block;width:100%;height:100%;object-fit:cover;}
 
-  /* ---------- CTA ---------- */
+  h2{
+    font-size:clamp(26px,2.6vw,34px);
+    line-height:1.12;letter-spacing:-.015em;font-weight:800;
+    text-transform:uppercase;color:var(--ink);margin-bottom:22px;
+  }
+  h2 .sub{color:var(--accent);}
+  .item p{color:var(--body);}
+  .item p + p{margin-top:16px;}
+
+  /* ---------- PIETEIKŠANĀS ---------- */
   .cta{
-    margin-top:56px;background:var(--ink);color:#fff;
-    padding:44px 36px;border-radius:6px;
+    margin-top:80px;background:var(--ink);color:#fff;
+    padding:56px 48px;border-radius:6px;
   }
   .cta h3{
-    font-family:'Bebas Neue',Impact,sans-serif;
-    font-size:36px;font-weight:400;line-height:1.05;
-    text-transform:uppercase;margin-bottom:14px;
+    font-size:38px;font-weight:800;line-height:1.08;
+    text-transform:uppercase;letter-spacing:-.015em;margin-bottom:16px;
   }
-  .cta p{color:#c9c5be;font-size:17px;}
-  .facts{
-    list-style:none;margin:26px 0 30px;border-top:1px solid #333;
-  }
+  .cta > p{color:#bdb8b0;font-size:18px;max-width:56ch;}
+  .facts{list-style:none;margin:32px 0 34px;border-top:1px solid #343434;max-width:620px;}
   .facts li{
-    display:flex;justify-content:space-between;gap:20px;
-    padding:13px 0;border-bottom:1px solid #333;font-size:16px;
+    display:flex;justify-content:space-between;gap:24px;
+    padding:14px 0;border-bottom:1px solid #343434;font-size:16px;
   }
-  .facts .lab{color:#8f8a82;}
-  .facts .val{font-weight:600;text-align:right;}
+  .facts .lab{color:#8d887f;}
+  .facts .val{font-weight:600;text-align:right;color:#fff;}
   .btn{
     display:inline-block;background:var(--accent);color:#fff;
     text-decoration:none;font-weight:700;font-size:17px;
-    padding:16px 34px;border-radius:4px;
+    padding:17px 38px;border-radius:4px;
   }
-  .btn:hover{background:#7d1a29;}
-  .note{margin-top:16px;font-size:15px;color:#8f8a82;}
+  .btn:hover{opacity:.88;}
+  .note{margin-top:18px;font-size:15px;color:#8d887f;}
 
-  @media(max-width:520px){
-    body{font-size:17px;}
-    .wrap{padding:0 20px 70px;}
-    header{padding:44px 0 30px;}
-    h2{font-size:23px;}
-    .num{font-size:52px;}
-    .cta{padding:32px 24px;}
+  /* ---------- MOBILAIS ---------- */
+  @media(max-width:1000px){
+    .item{grid-template-columns:52px 340px 1fr;gap:0 36px;}
+  }
+  @media(max-width:840px){
+    .wrap{padding:0 22px 80px;}
+    header{padding:52px 0 34px;}
+    .rule{margin-bottom:44px;}
+    .item{
+      grid-template-columns:1fr;
+      gap:0;
+      padding:44px 0;
+    }
+    .num{padding-top:0;margin-bottom:14px;}
+    .shot{margin-bottom:26px;aspect-ratio:4/3;}
+    h2{font-size:26px;margin-bottom:16px;}
+    .cta{padding:36px 26px;}
+    .cta h3{font-size:30px;}
   }
 </style>
 </head>
@@ -118,55 +127,66 @@
     <h1>Tautas dejām vajag vairāk puišu.<br><span class="hl">Lūk, 5 iemesli, kāpēc tam jābūt tev.</span></h1>
     <p class="standfirst">Nav jāprot neviens solis. Nav jābūt sportistam. Vienkārši jāatnāk uz vienu mēģinājumu.</p>
   </header>
-
-  <!-- ATTĒLS 1 — liela bilde no koncerta vai mēģinājuma -->
-  <figure class="shot hero-shot">
-    <div class="ph">Šeit ievieto lielo bildi<br>(koncerts vai mēģinājums)</div>
-  </figure>
+  <div class="rule"></div>
 
   <div class="item">
-    <span class="num">1</span>
-    <h2>Tu būsi labākajā formā savā dzīvē, nesperot kāju sporta zālē</h2>
-    <p>Divas stundas lēkāšanas, pietupienu, griešanās un partneres celšanas. Kājas un pleci strādā pa īstam. Lielākā daļa puišu, kas nāk no sporta zāles, ir pārsteigti, cik smagi elpo pēc pirmā mēģinājuma.</p>
-    <p>Pēc sezonas tu to pamanīsi ne tikai spogulī, bet arī tajā, kā kusties.</p>
+    <div class="num">01</div>
+    <figure class="shot">
+      <img src="https://raw.githubusercontent.com/BNDKMedia/deju-listicle/refs/heads/main/dejas/1.png" alt="Dejotāji mēģinājumā">
+    </figure>
+    <div>
+      <h2>Tu būsi labākajā formā savā dzīvē <span class="sub">(un nebūs jāsper kāja sporta zālē)</span></h2>
+      <p>Divas stundas lēkāšanas, pietupienu, griešanās un partneres celšanas. Kājas un pleci strādā pa īstam. Lielākā daļa puišu, kas nāk no sporta zāles, ir pārsteigti, cik smagi elpo pēc pirmā mēģinājuma.</p>
+      <p>Pēc sezonas tu to pamanīsi ne tikai spogulī, bet arī tajā, kā kusties.</p>
+    </div>
   </div>
 
   <div class="item">
-    <span class="num">2</span>
-    <h2>Divi vakari, kas pieder tev</h2>
-    <p>Fiksēti kalendārā, telefons somā, nekāda sakara ar darbu. Tev ir iemesls iziet no mājām un kaut kas nedēļā, kas nav darbs vai ekrāns.</p>
-    <p>Lielākajai daļai cilvēku tā nav, un viņi to jūt.</p>
-  </div>
-
-  <!-- ATTĒLS 2 — puiši mēģinājumā vai aizkulisēs -->
-  <figure class="shot">
-    <div class="ph">Šeit ievieto bildi<br>(puiši mēģinājumā)</div>
-  </figure>
-
-  <div class="item">
-    <span class="num">3</span>
-    <h2>Kā puisis tu esi tas, ko visi grib redzēt zālē</h2>
-    <p>Tautas dejās sieviešu ir daudz vairāk nekā vīriešu. Tas nozīmē, ka tev nekad nepietrūks partneres, tevi mācīs kārtīgi, jo grib paturēt, un tu būsi pieprasīts jau no pirmās dienas.</p>
-    <p>Ja esi brīvs, divi vakari nedēļā telpā, kur pilns ar meitenēm, kas pašas izvēlējušās te būt, nav sliktākais plāns.</p>
+    <div class="num">02</div>
+    <figure class="shot">
+      <img src="https://raw.githubusercontent.com/BNDKMedia/deju-listicle/refs/heads/main/dejas/2.png" alt="Kolektīvs pēc mēģinājuma">
+    </figure>
+    <div>
+      <h2>Divi vakari nedēļā, kas pieder tikai tev <span class="sub">(bez darba, bez ekrāniem, bez attaisnošanās)</span></h2>
+      <p>Fiksēti kalendārā, telefons somā. Tev ir iemesls iziet no mājām un kaut kas nedēļā, kas nav darbs vai ekrāns.</p>
+      <p>Lielākajai daļai cilvēku tā nav, un viņi to jūt.</p>
+    </div>
   </div>
 
   <div class="item">
-    <span class="num">4</span>
-    <h2>Tu uzkāpsi uz skatuves — un galu galā nokļūsi Dziesmu un deju svētkos</h2>
-    <p>Uzstāties publikas priekšā ir kaut kas, ko lielākā daļa cilvēku nekad nedara. Tu to darīsi regulāri: koncerti, festivāli, braucieni pa Latviju un dažreiz arī ārpus tās.</p>
-    <p>Un, ja paliksi pie tā, tu dejosi Lielajā deju lieluzvedumā — tūkstošiem dejotāju, pilns stadions. To nevar nopirkt. Tam ir jābūt kolektīvā.</p>
+    <div class="num">03</div>
+    <figure class="shot">
+      <img src="https://raw.githubusercontent.com/BNDKMedia/deju-listicle/refs/heads/main/dejas/3.png" alt="Dejotāju pāri zālē">
+    </figure>
+    <div>
+      <h2>Kā puisis tu esi tas, ko visi grib redzēt zālē <span class="sub">(partneres netrūks nevienā mēģinājumā)</span></h2>
+      <p>Tautas dejās sieviešu ir daudz vairāk nekā vīriešu. Tas nozīmē, ka tevi mācīs kārtīgi, jo grib paturēt, un tu būsi pieprasīts jau no pirmās dienas.</p>
+      <p>Ja esi brīvs, divi vakari nedēļā telpā, kur pilns ar meitenēm, kas pašas izvēlējušās te būt, nav sliktākais plāns.</p>
+    </div>
   </div>
 
-  <!-- ATTĒLS 3 — skatuve, stadions vai brauciens -->
-  <figure class="shot">
-    <div class="ph">Šeit ievieto bildi<br>(skatuve vai brauciens)</div>
-  </figure>
+  <div class="item">
+    <div class="num">04</div>
+    <figure class="shot">
+      <img src="https://raw.githubusercontent.com/BNDKMedia/deju-listicle/refs/heads/main/dejas/4.png" alt="Uzstāšanās uz skatuves">
+    </figure>
+    <div>
+      <h2>Tu uzkāpsi uz skatuves un nokļūsi Dziesmu un deju svētkos <span class="sub">(to nevar nopirkt — tajā ir jāiedejo)</span></h2>
+      <p>Uzstāties publikas priekšā ir kaut kas, ko lielākā daļa cilvēku nekad nedara. Tu to darīsi regulāri: koncerti, festivāli, braucieni pa Latviju un dažreiz arī ārpus tās.</p>
+      <p>Un, ja paliksi pie tā, tu dejosi Lielajā deju lieluzvedumā — tūkstošiem dejotāju, pilns stadions. Tam ir jābūt kolektīvā jau savlaicīgi.</p>
+    </div>
+  </div>
 
   <div class="item">
-    <span class="num">5</span>
-    <h2>Tu iemācīsies vadīt</h2>
-    <p>Pāru dejās viens izlemj, otrs seko — un vada vīrietis. To nekur citur nemāca.</p>
-    <p>Sākumā tas ir neveikli, pēc mēneša vairs nav, un tas parādās arī ārpus deju zāles: kā tu stāvi, kā kusties, kā uzņemies vadību, kad kāds to gaida.</p>
+    <div class="num">05</div>
+    <figure class="shot">
+      <img src="https://raw.githubusercontent.com/BNDKMedia/deju-listicle/refs/heads/main/dejas/5.png" alt="Dejotājs vada partneri">
+    </figure>
+    <div>
+      <h2>Tu iemācīsies vadīt <span class="sub">(un tas paliek arī ārpus deju zāles)</span></h2>
+      <p>Pāru dejās viens izlemj, otrs seko — un vada vīrietis. To nekur citur nemāca.</p>
+      <p>Sākumā tas ir neveikli, pēc mēneša vairs nav. Un tas parādās arī citur: kā tu stāvi, kā kusties, kā uzņemies vadību, kad kāds to gaida.</p>
+    </div>
   </div>
 
   <!-- ===== AIZPILDI ŠO BLOKU AR SAVIEM DATIEM ===== -->
