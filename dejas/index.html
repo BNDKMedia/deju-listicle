@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tautas dejām vajag vairāk puišu — 5 iemesli</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#141414;
+    --muted:#5f5f5f;
+    --line:#e3e0da;
+    --paper:#faf8f4;
+    --accent:#9d2235;
+    --accent-soft:#f3e6e8;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+    font-size:18px;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:720px;margin:0 auto;padding:0 24px 100px;}
+
+  /* ---------- HEADER ---------- */
+  header{padding:72px 0 40px;border-bottom:3px solid var(--ink);margin-bottom:48px;}
+  .kicker{
+    font-size:13px;letter-spacing:.16em;text-transform:uppercase;
+    font-weight:700;color:var(--accent);margin-bottom:20px;
+  }
+  h1{
+    font-family:'Bebas Neue',Impact,sans-serif;
+    font-size:clamp(42px,8vw,76px);
+    line-height:.98;letter-spacing:.01em;font-weight:400;
+    text-transform:uppercase;
+  }
+  h1 .hl{color:var(--accent);}
+  .standfirst{
+    margin-top:24px;font-size:20px;color:var(--muted);max-width:56ch;
+  }
+
+  /* ---------- IMAGE SLOTS ---------- */
+  .shot{
+    margin:0 0 40px;background:#e8e5df;border:1px dashed #c9c4bb;
+    border-radius:4px;overflow:hidden;
+  }
+  .shot img{display:block;width:100%;height:auto;}
+  .shot .ph{
+    display:flex;align-items:center;justify-content:center;
+    aspect-ratio:16/9;color:#9a948a;font-size:14px;
+    letter-spacing:.08em;text-transform:uppercase;text-align:center;padding:20px;
+  }
+  .hero-shot{margin-bottom:56px;}
+
+  /* ---------- LIST ITEMS ---------- */
+  .item{padding:40px 0;border-top:1px solid var(--line);}
+  .item:first-of-type{border-top:none;padding-top:0;}
+  .num{
+    font-family:'Bebas Neue',Impact,sans-serif;
+    font-size:64px;line-height:1;color:var(--accent);
+    display:block;margin-bottom:6px;
+  }
+  h2{
+    font-size:27px;line-height:1.25;font-weight:700;
+    letter-spacing:-.01em;margin-bottom:16px;
+  }
+  .item p{color:#2b2b2b;}
+  .item p + p{margin-top:14px;}
+
+  /* ---------- CTA ---------- */
+  .cta{
+    margin-top:56px;background:var(--ink);color:#fff;
+    padding:44px 36px;border-radius:6px;
+  }
+  .cta h3{
+    font-family:'Bebas Neue',Impact,sans-serif;
+    font-size:36px;font-weight:400;line-height:1.05;
+    text-transform:uppercase;margin-bottom:14px;
+  }
+  .cta p{color:#c9c5be;font-size:17px;}
+  .facts{
+    list-style:none;margin:26px 0 30px;border-top:1px solid #333;
+  }
+  .facts li{
+    display:flex;justify-content:space-between;gap:20px;
+    padding:13px 0;border-bottom:1px solid #333;font-size:16px;
+  }
+  .facts .lab{color:#8f8a82;}
+  .facts .val{font-weight:600;text-align:right;}
+  .btn{
+    display:inline-block;background:var(--accent);color:#fff;
+    text-decoration:none;font-weight:700;font-size:17px;
+    padding:16px 34px;border-radius:4px;
+  }
+  .btn:hover{background:#7d1a29;}
+  .note{margin-top:16px;font-size:15px;color:#8f8a82;}
+
+  @media(max-width:520px){
+    body{font-size:17px;}
+    .wrap{padding:0 20px 70px;}
+    header{padding:44px 0 30px;}
+    h2{font-size:23px;}
+    .num{font-size:52px;}
+    .cta{padding:32px 24px;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="kicker">Uzņemam jaunus dalībniekus</div>
+    <h1>Tautas dejām vajag vairāk puišu.<br><span class="hl">Lūk, 5 iemesli, kāpēc tam jābūt tev.</span></h1>
+    <p class="standfirst">Nav jāprot neviens solis. Nav jābūt sportistam. Vienkārši jāatnāk uz vienu mēģinājumu.</p>
+  </header>
+
+  <!-- ATTĒLS 1 — liela bilde no koncerta vai mēģinājuma -->
+  <figure class="shot hero-shot">
+    <div class="ph">Šeit ievieto lielo bildi<br>(koncerts vai mēģinājums)</div>
+  </figure>
+
+  <div class="item">
+    <span class="num">1</span>
+    <h2>Tu būsi labākajā formā savā dzīvē, nesperot kāju sporta zālē</h2>
+    <p>Divas stundas lēkāšanas, pietupienu, griešanās un partneres celšanas. Kājas un pleci strādā pa īstam. Lielākā daļa puišu, kas nāk no sporta zāles, ir pārsteigti, cik smagi elpo pēc pirmā mēģinājuma.</p>
+    <p>Pēc sezonas tu to pamanīsi ne tikai spogulī, bet arī tajā, kā kusties.</p>
+  </div>
+
+  <div class="item">
+    <span class="num">2</span>
+    <h2>Divi vakari, kas pieder tev</h2>
+    <p>Fiksēti kalendārā, telefons somā, nekāda sakara ar darbu. Tev ir iemesls iziet no mājām un kaut kas nedēļā, kas nav darbs vai ekrāns.</p>
+    <p>Lielākajai daļai cilvēku tā nav, un viņi to jūt.</p>
+  </div>
+
+  <!-- ATTĒLS 2 — puiši mēģinājumā vai aizkulisēs -->
+  <figure class="shot">
+    <div class="ph">Šeit ievieto bildi<br>(puiši mēģinājumā)</div>
+  </figure>
+
+  <div class="item">
+    <span class="num">3</span>
+    <h2>Kā puisis tu esi tas, ko visi grib redzēt zālē</h2>
+    <p>Tautas dejās sieviešu ir daudz vairāk nekā vīriešu. Tas nozīmē, ka tev nekad nepietrūks partneres, tevi mācīs kārtīgi, jo grib paturēt, un tu būsi pieprasīts jau no pirmās dienas.</p>
+    <p>Ja esi brīvs, divi vakari nedēļā telpā, kur pilns ar meitenēm, kas pašas izvēlējušās te būt, nav sliktākais plāns.</p>
+  </div>
+
+  <div class="item">
+    <span class="num">4</span>
+    <h2>Tu uzkāpsi uz skatuves — un galu galā nokļūsi Dziesmu un deju svētkos</h2>
+    <p>Uzstāties publikas priekšā ir kaut kas, ko lielākā daļa cilvēku nekad nedara. Tu to darīsi regulāri: koncerti, festivāli, braucieni pa Latviju un dažreiz arī ārpus tās.</p>
+    <p>Un, ja paliksi pie tā, tu dejosi Lielajā deju lieluzvedumā — tūkstošiem dejotāju, pilns stadions. To nevar nopirkt. Tam ir jābūt kolektīvā.</p>
+  </div>
+
+  <!-- ATTĒLS 3 — skatuve, stadions vai brauciens -->
+  <figure class="shot">
+    <div class="ph">Šeit ievieto bildi<br>(skatuve vai brauciens)</div>
+  </figure>
+
+  <div class="item">
+    <span class="num">5</span>
+    <h2>Tu iemācīsies vadīt</h2>
+    <p>Pāru dejās viens izlemj, otrs seko — un vada vīrietis. To nekur citur nemāca.</p>
+    <p>Sākumā tas ir neveikli, pēc mēneša vairs nav, un tas parādās arī ārpus deju zāles: kā tu stāvi, kā kusties, kā uzņemies vadību, kad kāds to gaida.</p>
+  </div>
+
+  <!-- ===== AIZPILDI ŠO BLOKU AR SAVIEM DATIEM ===== -->
+  <div class="cta">
+    <h3>Atnāc uz vienu mēģinājumu</h3>
+    <p>Nav jāpiesakās uz visu sezonu. Atnāc, paskaties, izmēģini. Ja nepatiks — neatnāksi vēlreiz.</p>
+    <ul class="facts">
+      <li><span class="lab">Kolektīvs</span><span class="val">KOLEKTĪVA NOSAUKUMS</span></li>
+      <li><span class="lab">Mēģinājumi</span><span class="val">Pirmdienās un trešdienās 19:00</span></li>
+      <li><span class="lab">Vieta</span><span class="val">Adrese, pilsēta</span></li>
+      <li><span class="lab">Vecums</span><span class="val">No 18 gadiem</span></li>
+      <li><span class="lab">Priekšzināšanas</span><span class="val">Nav vajadzīgas</span></li>
+    </ul>
+    <a class="btn" href="mailto:tavs@epasts.lv">Piesakies šeit</a>
+    <p class="note">Vai raksti mums Instagram / Facebook — atbildam ātri.</p>
+  </div>
+  <!-- ===== BLOKA BEIGAS ===== -->
+
+</div>
+</body>
+</html>
